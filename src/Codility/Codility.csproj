@@ -54,11 +54,16 @@
     <Compile Include="BracketsRotation\SolutionParallel.cs" />
     <Compile Include="CountDiv\Solution.cs" />
     <Compile Include="CyclicRotation\Solution.cs" />
+    <Compile Include="Distinct\Solution.cs" />
     <Compile Include="FrogJump\Solution.cs" />
     <Compile Include="FrogRiverOne\Solution.cs" />
+    <Compile Include="GenomicRangeQuery\Solution.cs" />
     <Compile Include="MaxCounters\Solution.cs" />
+    <Compile Include="MaxProductOfThree\Solution.cs" />
+    <Compile Include="MinAvgTwoSlice\Solution.cs" />
     <Compile Include="MissingInteger\Solution.cs" />
     <Compile Include="Nails\Solution.cs" />
+    <Compile Include="NumberOfDiscIntersections\Solution.cs" />
     <Compile Include="OddOccurrencesInArray\Solution.cs" />
     <Compile Include="PassingCars\Solution.cs" />
     <Compile Include="PermCheck\Solution.cs" />
@@ -66,7 +71,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sorting\Solution.cs" />
+    <Compile Include="StoneWall\Solution.cs" />
     <Compile Include="TapeEquilibrium\Solution.cs" />
+    <Compile Include="Triangle\Solution.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -7,7 +7,88 @@
     {
         static void Main(string[] args)
         {
-            PassingCars();
+
+        }
+
+        static void NumberOfDiscIntersections()
+        {
+            Action<int[], int> action = (a, result) =>
+            {
+                var s = new NumberOfDiscIntersections.Solution();
+                int res = s.solution(a);
+
+                if (res != result)
+                    throw new Exception();
+            };
+
+            action(new[] {1, 5, 2, 1, 4, 0}, 11);
+            action(new[] {1,1,1}, 3);
+        }
+
+        static void MaxProductOfThree()
+        {
+            Action<int[], int> action = (a, result) =>
+            {
+                var s = new MaxProductOfThree.Solution();
+                int res = s.solution(a);
+
+                if (res != result)
+                    throw new Exception();
+            };
+
+            action(new[] { -3, 1, 2, -2, 5, 6 }, 60);
+            action(new[] { -5, 5, -5, 4 }, 125);
+            action(new[] { -5, -6, -4, -7, -10 }, -120);
+        }
+
+        static void Triangle()
+        {
+            Action<int[], int> action = (a, result) =>
+            {
+                var s = new Triangle.Solution();
+                int res = s.solution(a);
+
+                if (res != result)
+                    throw new Exception();
+            };
+
+            action(new[] { 10, 2, 5, 1, 8, 20 }, 1);
+            action(new[] { 10, 50, 5, 1 }, 0);
+        }
+
+        static void GenomicRangeQuery()
+        {
+            Action<string, int[], int[], int[]> action = (s, p, q, result) =>
+            {
+                var sol = new GenomicRangeQuery.Solution();
+                int[] res = sol.solution(s, p, q);
+
+                for (int i = 0; i < result.Length; i++)
+                {
+                    if (res[i] != result[i])
+                        throw new Exception();
+                }
+            };
+
+            action("CAGCCTA", new[] { 2, 5, 0 }, new[] { 4, 5, 6 }, new[] { 2, 4, 1 });
+            action("A", new[] { 0 }, new[] { 0 }, new[] { 1 });
+            action("AC", new[] { 0, 0, 1 }, new[] { 0, 1, 1 }, new[] { 1, 1, 2 });
+        }
+
+        static void MinAvgTwoSlice()
+        {
+            Action<int[], int> action = (a, result) =>
+            {
+                var s = new MinAvgTwoSlice.Solution();
+                int res = s.solution(a);
+
+                if (res != result)
+                    throw new Exception();
+            };
+
+            //action(new[] {4, 2, 2, 5, 1, 5, 8}, 1);
+            //action(new[] {1,2,3}, 0);
+            action(new[] { -3, -5, -8, -4, -10 }, 2);
         }
 
         static void PassingCars()
@@ -21,9 +102,9 @@
                     throw new Exception();
             };
 
-            action(new[] {0, 1, 0, 1, 1}, 5);
-            action(new[] {1, 1, 0, 1, 1}, 2);
-            action(new[] {1, 1, 0, 1, 1,0,0,1,0}, 5);
+            action(new[] { 0, 1, 0, 1, 1 }, 5);
+            action(new[] { 1, 1, 0, 1, 1 }, 2);
+            action(new[] { 1, 1, 0, 1, 1, 0, 0, 1, 0 }, 5);
         }
 
         static void CountDiv()
@@ -60,7 +141,7 @@
                 }
             };
 
-            action(5, new[] {3, 4, 4, 6, 1, 4, 4}, new[] {3, 2, 2, 4, 2});
+            action(5, new[] { 3, 4, 4, 6, 1, 4, 4 }, new[] { 3, 2, 2, 4, 2 });
         }
 
         static void MissingInteger()
@@ -74,10 +155,10 @@
                     throw new Exception();
             };
 
-            action(new[] {1, 3, 6, 4, 1, 2}, 5);
-            action(new[] {2, 3, 6, 4, 4, 2}, 1);
-            action(new[] {0, 3, 6, 4, 4, 2}, 1);
-            action(new[] {-1, 3, 6, 4, 4, 2}, 1);
+            action(new[] { 1, 3, 6, 4, 1, 2 }, 5);
+            action(new[] { 2, 3, 6, 4, 4, 2 }, 1);
+            action(new[] { 0, 3, 6, 4, 4, 2 }, 1);
+            action(new[] { -1, 3, 6, 4, 4, 2 }, 1);
         }
 
         static void FrogRiverOne()
@@ -92,8 +173,8 @@
             };
 
 
-            action(5, new[] {1,3,1,4,2,3,5,4}, 6);
-            action(5, new[] {5,3,1,4,2,3,5,4}, 4);
+            action(5, new[] { 1, 3, 1, 4, 2, 3, 5, 4 }, 6);
+            action(5, new[] { 5, 3, 1, 4, 2, 3, 5, 4 }, 4);
         }
 
         static void PermCheck()
@@ -107,8 +188,8 @@
                     throw new Exception();
             };
 
-            action(new[] {4, 1, 3, 2}, 1);
-            action(new[] {4, 1, 3}, 0);
+            action(new[] { 4, 1, 3, 2 }, 1);
+            action(new[] { 4, 1, 3 }, 0);
         }
 
         static void TapeEquilibrium()
@@ -122,7 +203,7 @@
                     throw new Exception();
             };
 
-            action(new[] {3, 1, 2, 4, 3}, 1);
+            action(new[] { 3, 1, 2, 4, 3 }, 1);
         }
 
         static void PermMissingElem()
@@ -136,7 +217,7 @@
                     throw new Exception();
             };
 
-            a(new[] {2, 3, 1, 5}, 4);
+            a(new[] { 2, 3, 1, 5 }, 4);
         }
 
         static void FrogJump()
@@ -166,8 +247,8 @@
                 }
             };
 
-            m(new[] {9, 3, 9, 3, 9, 7, 9}, 7);
-            m(new[] {42}, 42);
+            m(new[] { 9, 3, 9, 3, 9, 7, 9 }, 7);
+            m(new[] { 42 }, 42);
         }
 
         static void CyclicRotation()
@@ -186,7 +267,7 @@
                 }
             };
 
-            method(new[] {3, 8, 9, 7, 6}, 3, new[] {9, 7, 6, 3, 8});
+            method(new[] { 3, 8, 9, 7, 6 }, 3, new[] { 9, 7, 6, 3, 8 });
         }
 
         static void BinaryGap()
