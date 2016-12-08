@@ -4,7 +4,6 @@
 
     class Solution
     {
-        //TODO
         public int solution(int[] H)
         {
             var stack = new Stack<int>();
@@ -14,15 +13,16 @@
             {
                 int h = H[i];
 
-                if (stack.Count == 0 || stack.Peek() <= h)
-                {
-                    stack.Push(h);
-                }
-                else
-                {
-                    result++;
-                }
+                while (stack.Count > 0 && h < stack.Peek())
+                    stack.Pop();
+
+                if (stack.Count > 0 && h == stack.Peek())
+                    continue;
+
+                stack.Push(h);
+                result++;
             }
+
 
             return result;
         }

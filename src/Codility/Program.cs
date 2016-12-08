@@ -7,7 +7,58 @@
     {
         static void Main(string[] args)
         {
+            Nesting();
+        }
 
+        static void Nesting()
+        {
+            Action<string, int> action = (s, result) =>
+            {
+                var sol = new Nesting.Solution();
+                int res = sol.solution(s);
+
+                if (res != result)
+                    throw new Exception();
+            };
+
+            action("(()(())())", 1);
+            action("())", 0);
+            action("(((", 0);
+        }
+
+        static void Brackets()
+        {
+            Action<string, int> action = (s, result) =>
+            {
+                var sol = new Brackets.Solution();
+                int res = sol.solution(s);
+
+                if (res != result)
+                    throw new Exception();
+            };
+
+            action("{[()()]}", 1);
+            action("([)()]", 0);
+            action("{{{", 0);
+        }
+
+        static void StoneWall()
+        {
+            Action<int[], int> action = (a, result) =>
+            {
+                var s = new StoneWall.Solution();
+                int res = s.solution(a);
+
+                if (res != result)
+                    throw new Exception();
+            };
+
+            action(new[] { 1 }, 1);
+            action(new[] { 1, 2, 1, 2, 1 }, 3);
+            action(new[] { 1, 1, 1, 1, 1, 1, 1 }, 1);
+            action(new[] { 1, 2, 4, 3, 2, 2, 1 }, 4);
+            action(new[] { 8, 8, 5, 7, 9, 8, 7, 4, 8 }, 7);
+            action(new[] { 2, 5, 1, 4, 6, 7, 9, 10, 1 }, 8);
         }
 
         static void NumberOfDiscIntersections()

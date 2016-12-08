@@ -52,9 +52,11 @@
     <Compile Include="BracketsRotation\Solution6.cs" />
     <Compile Include="BracketsRotation\Solution7.cs" />
     <Compile Include="BracketsRotation\SolutionParallel.cs" />
+    <Compile Include="Brackets\Solution.cs" />
     <Compile Include="CountDiv\Solution.cs" />
     <Compile Include="CyclicRotation\Solution.cs" />
     <Compile Include="Distinct\Solution.cs" />
+    <Compile Include="Fish\Solution.cs" />
     <Compile Include="FrogJump\Solution.cs" />
     <Compile Include="FrogRiverOne\Solution.cs" />
     <Compile Include="GenomicRangeQuery\Solution.cs" />
@@ -63,6 +65,7 @@
     <Compile Include="MinAvgTwoSlice\Solution.cs" />
     <Compile Include="MissingInteger\Solution.cs" />
     <Compile Include="Nails\Solution.cs" />
+    <Compile Include="Nesting\Solution.cs" />
     <Compile Include="NumberOfDiscIntersections\Solution.cs" />
     <Compile Include="OddOccurrencesInArray\Solution.cs" />
     <Compile Include="PassingCars\Solution.cs" />
