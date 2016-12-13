@@ -56,12 +56,17 @@
     <Compile Include="CountDiv\Solution.cs" />
     <Compile Include="CyclicRotation\Solution.cs" />
     <Compile Include="Distinct\Solution.cs" />
+    <Compile Include="Dominator\Solution.cs" />
+    <Compile Include="EquiLeader\Solution.cs" />
     <Compile Include="Fish\Solution.cs" />
     <Compile Include="FrogJump\Solution.cs" />
     <Compile Include="FrogRiverOne\Solution.cs" />
     <Compile Include="GenomicRangeQuery\Solution.cs" />
     <Compile Include="MaxCounters\Solution.cs" />
+    <Compile Include="MaxDoubleSliceSum\Solution.cs" />
     <Compile Include="MaxProductOfThree\Solution.cs" />
+    <Compile Include="MaxProfit\Solution.cs" />
+    <Compile Include="MaxSliceSum\Solution.cs" />
     <Compile Include="MinAvgTwoSlice\Solution.cs" />
     <Compile Include="MissingInteger\Solution.cs" />
     <Compile Include="Nails\Solution.cs" />
@@ -81,6 +86,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

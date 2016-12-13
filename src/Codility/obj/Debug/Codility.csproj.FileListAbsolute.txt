@@ -1,6 +1,0 @@
-C:\Users\mateusz.mazurek\Desktop\Codility\Codility\Codility\bin\Debug\Codility.exe.config
-C:\Users\mateusz.mazurek\Desktop\Codility\Codility\Codility\bin\Debug\Codility.exe
-C:\Users\mateusz.mazurek\Desktop\Codility\Codility\Codility\bin\Debug\Codility.pdb
-C:\Users\mateusz.mazurek\Desktop\Codility\Codility\Codility\obj\Debug\Codility.csprojResolveAssemblyReference.cache
-C:\Users\mateusz.mazurek\Desktop\Codility\Codility\Codility\obj\Debug\Codility.exe
-C:\Users\mateusz.mazurek\Desktop\Codility\Codility\Codility\obj\Debug\Codility.pdb

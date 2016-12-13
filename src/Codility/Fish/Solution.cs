@@ -4,29 +4,30 @@
 
     class Solution
     {
-        //check
         public int solution(int[] A, int[] B)
         {
             var stack = new Stack<int>();
+            stack.Push(0);
 
-            for (int i = 0; i < A.Length; i++)
+            for (int i = 1; i < A.Length; i++)
             {
-                int size = A[i];
-                int direction = B[i];
+                int direction = B[stack.Peek()];
+                stack.Push(i);
 
-                if (stack.Count == 0 || B[stack.Peek()] == direction)
+                while (stack.Count > 1 && (direction != 0 || B[stack.Peek()] != 1) && B[stack.Peek()] != direction)
                 {
-                    stack.Push(i);
-                }
-                else
-                {
-                    int prev = stack.Pop();
+                    int front = stack.Pop();
+                    int behind = stack.Pop();
 
-                    if (A[prev] > size)
-                        stack.Push(prev);
+                    if (stack.Count > 0)
+                        direction = B[stack.Peek()];
+
+                    if (A[front] > A[behind])
+                        stack.Push(front);
                     else
-                        stack.Push(i);
+                        stack.Push(behind);
                 }
+
             }
 
             return stack.Count;

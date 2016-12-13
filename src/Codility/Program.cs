@@ -7,7 +7,101 @@
     {
         static void Main(string[] args)
         {
-            Nesting();
+            MaxDoubleSliceSum();
+        }
+
+        static void MaxDoubleSliceSum()
+        {
+            Action<int[], int> action = (a, result) =>
+            {
+                var s = new MaxDoubleSliceSum.Solution();
+                int res = s.solution(a);
+
+                if (res != result)
+                    throw new Exception();
+            };
+
+            action(new[] { 3, 2, 6, -1, 4, 5, -1, 2 }, 17);
+            action(new[] { 5, 17, 0, 3 }, 17);
+            action(new[] { 5,-2,17,3 }, 17);
+        }
+
+        static void MaxSliceSum()
+        {
+            Action<int[], int> action = (a, result) =>
+            {
+                var s = new MaxSliceSum.Solution();
+                int res = s.solution(a);
+
+                if (res != result)
+                    throw new Exception();
+            };
+
+            action(new[] {3, 2, -6, 4, 0}, 5);
+        }
+        static void MaxProfit()
+        {
+            Action<int[], int> action = (a, result) =>
+            {
+                var s = new MaxProfit.Solution();
+                int res = s.solution(a);
+
+                if (res != result)
+                    throw new Exception();
+            };
+
+            action(new[] {23171, 21011, 21123, 21366, 21013, 21367}, 356);
+            action(new[] {10, 9, 9, 8, 7, 6}, 0);
+        }
+
+        static void EquiLeader()
+        {
+            Action<int[], int> action = (a, result) =>
+            {
+                var s = new EquiLeader.Solution();
+                int res = s.solution(a);
+
+                if (res != result)
+                    throw new Exception();
+            };
+
+            action(new[] { 4, 4, 2, 5, 3, 4, 4, 4 }, 3);
+            action(new[] { 0 }, 0);
+            action(new[] { 0, 0 }, 1);
+            action(new[] { 4, 3, 4, 4, 4, 2 }, 2);
+            action(new[] { 1, 2, 1, 1, 2, 1 }, 3);
+            action(new[] { 1, 1,1 }, 2);
+        }
+
+        static void Dominator()
+        {
+            Action<int[], int> action = (a, result) =>
+            {
+                var s = new Dominator.Solution();
+                int res = s.solution(a);
+
+                if (res != result)
+                    throw new Exception();
+            };
+
+            action(new[] {3, 4, 3, 2, 3, -1, 3, 3}, 7);
+        }
+
+        static void Fish()
+        {
+            Action<int[], int[], int> action = (a, b, result) =>
+            {
+                var s = new Fish.Solution();
+                int res = s.solution(a, b);
+
+                if (res != result)
+                    throw new Exception();
+            };
+
+            action(new[] { 4, 3, 2, 1, 5 }, new[] { 0, 1, 0, 0, 0 }, 2);
+            action(new[] { 4, 3, 2, 1, 5 }, new[] { 1, 0, 0, 0, 0 }, 1);
+            action(new[] { 4, 3, 2, 1, 5 }, new[] { 1, 1, 0, 0, 1 }, 3);
+            action(new[] { 4, 3, 2, 1, 5 }, new[] { 0, 0, 1, 1, 0 }, 3);
         }
 
         static void Nesting()
