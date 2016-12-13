@@ -54,6 +54,7 @@
     <Compile Include="BracketsRotation\SolutionParallel.cs" />
     <Compile Include="Brackets\Solution.cs" />
     <Compile Include="CountDiv\Solution.cs" />
+    <Compile Include="CountFactors\Solution.cs" />
     <Compile Include="CyclicRotation\Solution.cs" />
     <Compile Include="Distinct\Solution.cs" />
     <Compile Include="Dominator\Solution.cs" />

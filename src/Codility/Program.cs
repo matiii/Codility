@@ -7,7 +7,26 @@
     {
         static void Main(string[] args)
         {
-            MaxDoubleSliceSum();
+            CountFactors();
+        }
+
+        static void CountFactors()
+        {
+            Action<int, int> action = (n, result) =>
+            {
+                var s = new CountFactors.Solution();
+                int res = s.solution(n);
+
+                if (result != res)
+                    throw new Exception();
+            };
+
+            action(16, 5);
+            action(24, 8);
+            action(1, 1);
+            action(2, 2);
+            action(4, 3);
+            action(125, 4);
         }
 
         static void MaxDoubleSliceSum()
