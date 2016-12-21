@@ -7,7 +7,76 @@
     {
         static void Main(string[] args)
         {
-            CountFactors();
+            CountSemiprimes();
+        }
+
+        static void CountSemiprimes()
+        {
+            Action<int, int[], int[], int[]> action = (n, p, q, result) =>
+            {
+                var s = new CountSemiprimes.Solution();
+                int[] res = s.solution(n, p, q);
+
+                for (int i = 0; i < result.Length; i++)
+                {
+                    if (result[i] != res[i])
+                        throw new Exception();
+                }
+            };
+
+            action(26, new[] {1, 4, 16}, new[] {26, 10, 20}, new[] {10, 4, 0});
+        }
+
+        static void Peaks()
+        {
+            Action<int[], int> action = (a, result) =>
+            {
+                var s = new Peaks.Solution();
+                int res = s.solution(a);
+
+                if (res != result)
+                    throw new Exception();
+            };
+
+            action(new[] { 1, 2, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2 }, 3);
+            action(new[] {1,2,1,2,1,2,3,2,2,2,2,2,2,2,2,2}, 1);
+            action(new[] {1}, 0);
+            action(new[] {1,1,1,1,2}, 0);
+        }
+
+        static void Flags()
+        {
+            Action<int[], int> action = (a, result) =>
+            {
+                var s = new Flags.Solution();
+                int res = s.solution(a);
+
+                if (res != result)
+                    throw new Exception();
+            };
+
+            action(new[] { 1, 5, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2 }, 3);
+            action(new[] { 0, 1, 0, 1, 2, 1, 2, 3, 2 }, 3);
+            action(new[] { 1, 2, 1, 2, 1, 2, 1, 2, 1 }, 2);
+            action(new[] {1,2,1,2,1,2,1,2,1,2,1,2,1,2,1}, 4);
+            action(new[] {1}, 0);
+            action(new[] {1,1}, 0);
+            action(new[] {1,2}, 0);
+        }
+
+        static void MinPerimeterRectangle()
+        {
+            Action<int, int> action = (n, result) =>
+            {
+                var s = new MinPerimeterRectangle.Solution();
+                int res = s.solution(n);
+
+                if (result != res)
+                    throw new Exception();
+            };
+
+            action(30, 22);
+            action(16, 16);
         }
 
         static void CountFactors()
