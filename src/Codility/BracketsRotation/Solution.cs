@@ -1,5 +1,6 @@
 ﻿namespace Codility.BracketsRotation
 {
+    //https://app.codility.com/programmers/task/brackets_rotation/
     using System.Collections.Generic;
 
     class Solution
